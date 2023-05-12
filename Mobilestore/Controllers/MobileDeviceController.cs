@@ -26,7 +26,7 @@ namespace Mobilestore.Controllers
         [HttpPost]
         public IActionResult createpost(MobileDeviceEntity mobiledata)
         {
-            _context.Create(mobiledata);
+            _context.Create(mobiledata); 
             return RedirectToAction("Index");
         }
 
